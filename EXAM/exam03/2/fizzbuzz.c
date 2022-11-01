@@ -22,7 +22,7 @@ void	fizzbuzz(void)
 	char	car;
 
 	numb = 1;
-	while (numb <= 20)
+	while (numb <= 100)
 	{
 		if ((numb % 3) == 0 && (numb % 5) == 0)
 			write(1, "fizzbuzz\n", 9);
