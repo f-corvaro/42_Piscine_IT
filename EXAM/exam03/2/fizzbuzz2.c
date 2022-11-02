@@ -8,12 +8,12 @@ void	ft_fizzbuzz(void)
 	i = 1;
 	while (i <= 100)
 	{
-		if (i % 3 == 0)
+		if ((i % 5 == 0) && (i % 3 == 0))
+            write(1, "fizzbuzz\n", 9);
+		else if (i % 3 == 0)
 			write(1, "fizz\n", 5);
 		else if (i % 5 == 0)
 			write(1, "buzz\n", 5);
-		else if ((i % 5 == 0) && (i % 3 == 0))
-			write(1, "fizzbuzz\n", 9);
 		else 
 		{
 			if ( i <= 9)
